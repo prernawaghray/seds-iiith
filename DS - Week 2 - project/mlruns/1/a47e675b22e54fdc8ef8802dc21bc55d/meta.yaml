@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/pwaghray/SEDS%20-%20IIITH/Part%20B%20-%20Data%20Science/Week%20-%202/project/mlruns/1/a47e675b22e54fdc8ef8802dc21bc55d/artifacts
+end_time: 1654969431003
+entry_point_name: ''
+experiment_id: '1'
+lifecycle_stage: active
+name: ''
+run_id: a47e675b22e54fdc8ef8802dc21bc55d
+run_uuid: a47e675b22e54fdc8ef8802dc21bc55d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1654969370778
+status: 3
+tags: []
+user_id: pwaghray
