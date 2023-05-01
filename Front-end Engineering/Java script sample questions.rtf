@@ -1,0 +1,426 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2636
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;\red255\green255\blue255;\red0\green0\blue0;\red0\green0\blue0;
+}
+{\*\expandedcolortbl;;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c0\c54118;
+}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid1\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{decimal\}}{\leveltext\leveltemplateid101\'01\'00;}{\levelnumbers\'01;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs28 \cf0 \
+1) Write a for loop in vanilla Javascript that will iterate from 0 to 15. For each iteration, it will check if the current number is odd or even, and logs a message to the screen.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 \expnd0\expndtw0\kerning0
+for (var x=0; x<=15; x++) \{\cb1 \
+\cb2 if (x === 0) \{\cb1 \
+\cb2 console.log(x +  " is even");\cb1 \
+\cb2 \}\cb1 \
+\cb2 else if (x % 2 === 0) \{\cb1 \
+\cb2 console.log(x + " is even");\cb1 \
+\cb2 \}\cb1 \
+\cb2 else \{\cb1 \
+\cb2 console.log(x + " is odd");\cb1 \
+\cb2 \}\cb1 \
+\cb2 \}\
+\
+2) Write a for loop in vanilla Javascript, which iterates over the integers from 1 to 100. For multiples of 3 print "Fizz" instead of the number and for the multiples of 5 print "Buzz". For numbers which are multiples of both 3 and 5 print "FizzBuzz".\
+for ( var i = 1; i <= 100; i++ )\cb1 \
+\cb2 \{\cb1 \
+\cb2 if ( i%3 === 0 && i%5 === 0 )\cb1 \
+\cb2 \{\cb1 \
+\cb2 console.log( i + " FizzBuzz" );\cb1 \
+\cb2 \}\cb1 \
+\cb2 else if ( i%3 === 0 )\cb1 \
+\cb2 \{\cb1 \
+\cb2 console.log(i+ " Fizz" );\cb1 \
+\cb2 \}\cb1 \
+\cb2 else if ( i%5 === 0 )\cb1 \
+\cb2 \{\cb1 \
+\cb2 console.log(i+ " Buzz" );\cb1 \
+\cb2 \}\cb1 \
+\cb2 else\cb1 \
+\cb2 \{\cb1 \
+\cb2 console.log(i);\cb1 \
+\cb2 \}\cb1 \
+\cb2 \}\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+3) \cb2 Write a program that prints the day of the week based on numerical input. Declare a variable named \'93day\'94 whose value represents a day in a week. Your code should output the name of the day based on the value of the day variable by using the switch statement.\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \cb2 For example, if we assign day = 5, then the code should output \'93Friday\'94, whereas Monday is Day 1.\
+\pard\pardeftab720\partightenfactor0
+\cf0 var day = 3;\cb1 \
+\cb2 var dayName;\cb1 \
+\cb2 switch (day) \{\cb1 \
+\cb2 case 1:\cb1 \
+\cb2 dayName = 'Sunday';\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 2:\cb1 \
+\cb2 dayName = 'Monday';\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 3:\cb1 \
+\cb2 dayName = 'Tuesday';\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 4:\cb1 \
+\cb2 dayName = 'Wednesday';\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 5:\cb1 \
+\cb2 dayName = 'Thursday';\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 6:\cb1 \
+\cb2 dayName = 'Friday';\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 7:\cb1 \
+\cb2 dayName = 'Saturday';\cb1 \
+\cb2 break;\cb1 \
+\cb2 default:\cb1 \
+\cb2 dayName = 'Invalid day';\cb1 \
+\cb2 \}\cb1 \
+\cb2 console.log(dayName);\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+4) \cb2 Write a program that serves as a Grade generator based on Marks. Your code should take a grade as input and prints the marks associated with that grade. Ex:\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \cb2 Grade A+ =\'a0Marks >= 90\cb1 \
+\cb2 Grade A =\'a0Marks [ >= 80 and <90 ]\cb1 \
+\cb2 Grade B+ =\'a0Marks [ >= 70 and <80 ]\cb1 \
+\cb2 Grade B =\'a0Marks [ >= 60 and <70 ]\cb1 \
+\cb2 Grade C =\'a0Marks < 60\
+\pard\pardeftab720\partightenfactor0
+\cf0 grade = \'93A\'94\cb1 \
+\cb2 switch (grade)\cb1 \
+\cb2 \{\cb1 \
+\cb2 case 'A+':\cb1 \
+\cb2 console.log("Marks >= 90");\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 'A':\cb1 \
+\cb2 console.log("Marks [ >= 80 and <90 ]");\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 'B+':\cb1 \
+\cb2 console.log("Marks [ >= 70 and <80 ]");\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 'B':\cb1 \
+\cb2 console.log("Marks [ >= 60 and <70 ]");\cb1 \
+\cb2 break;\cb1 \
+\cb2 case 'C':\cb1 \
+\cb2 console.log("Marks < 60");\cb1 \
+\cb2 break;\cb1 \
+\cb2 default:\cb1 \
+\cb2 console.log("Wrong grade.........");\cb1 \
+\}\
+\
+5) \cb2 Write a function that takes a number as input and prints if that number is prime or not.\
+function prime(n)\cb1 \
+\cb2 \{\cb1 \
+\cb2 if (n===1)\cb1 \
+\cb2 \{\cb1 \
+\cb2 return false;\cb1 \
+\cb2 \}\cb1 \
+\cb2 else if(n === 2)\cb1 \
+\cb2 \{\cb1 \
+\cb2 return true;\cb1 \
+\cb2 \}else\cb1 \
+\cb2 \{\cb1 \
+\cb2 for(var x = 2; x < n; x++)\cb1 \
+\cb2 \{\cb1 \
+\cb2 if(n % x === 0)\cb1 \
+\cb2 \{\cb1 \
+\cb2 return false;\cb1 \
+\cb2 \}\cb1 \
+\cb2 \}\cb1 \
+\cb2 return true;\cb1 \
+\cb2 \}\cb1 \
+\cb2 \}\cb1 \
+\cb2 console.log(prime(37));\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+6) \cb2 Write a function that reverses the input number.\
+function reverse_number(n)\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 \{\cb1 \
+\cb2 n = n + "";\cb1 \
+\cb2 return n.split("").reverse().join("");\cb1 \
+\cb2 \}\cb1 \
+\cb2 console.log(reverse_number(32243));\
+\
+7)\kerning1\expnd0\expndtw0  i. \expnd0\expndtw0\kerning0
+Display \'93Hello World\'94 on html page using Java-script.\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \cb2 \'a0ii. Write two JavaScript functions to handle two events :\cb1 \
+\cb2 \'a0 \'a0 a) when the mouse key is pressed down : Text colour should be red\cb1 \
+\cb2 \'a0 \'a0 b) when the mouse key is released/up :\'a0 Text colour should be blue\cb1 \
+\cb2 Paragraph for which colour needs to be changed:\cb1 \
+\cb2 \'93Click this changing-colour text. Mouse-down will change text colour to red while Mouse-up will change it to blue.\'94\'a0\'a0\'a0\cb1 \
+\cb2 iii. Understanding Scope:-\'a0\cb1 \
+\cb2 \'a0Create an Object 'Cat' by literal notation.\cb1 \
+\cb2 \'a0\'a0Properties of Cat :\'a0 name:\'94Mini\'94,colour:\'94white\'94,age:4\cb1 \
+\cb2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0printInfo: Outer function that will write cat\'92s name, colour and age to console.\cb1 \
+\cb2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0nestedFunction: Nested in printInfo, it will also print cat\'92s name, colour and age on the console.\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cb1 \
+\cb2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0Call nestedFunction() via printInfo()\cb1 \
+\cb2 \'a0After creating the above cat object, invoke printInfo() on cat object.\cb1 \
+\cb2 Note : Make appropriate use of \'93this\'94 keyword so that both functions will \'a0 print the correct name, colour and age of cat to console.\
+\pard\pardeftab720\partightenfactor0
+\cf0 1.\cb1 \
+\cb2 Display \'93Hello World\'94 on html page using Java-script.\cb1 \
+\cb2 Solution\cb1 \
+\cb2 <!DOCTYPE html>\cb1 \
+\cb2 <html>\cb1 \
+\cb2 <body>\cb1 \
+\cb2 <h2>Hello World Program</h2>\cb1 \
+\cb2 <script>\cb1 \
+\cb2 document.write('Hello, World!');\cb1 \
+\cb2 </script>\cb1 \
+\cb2 </body>\cb1 \
+\cb2 </html>\cb1 \
+\cb2 ------------------------------------------------------------------------\cb1 \
+\cb2 2.\cb1 \
+\cb2 Write two javascript functions to handle two events\cb1 \
+\cb2 :\cb1 \
+\cb2 1. when  mouse key is pressed down : Text\cb1 \
+\cb2 colour should be\cb1 \
+\cb2 red\cb1 \
+\cb2 2. when  mouse key is released/up :  Text\cb1 \
+\cb2 colour should be\cb1 \
+\cb2 blue\cb1 \
+\cb2 Paragraph for which colour needs to be changed:\cb1 \
+\cb2 \'93Click this changing-colour text. Mouse-down will\cb1 \
+\cb2 change text colour to red\cb1 \
+\cb2 while Mouse-up will change it blue.\'94\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 Solution\cb1 \
+\cb2 <!DOCTYPE html>\cb1 \
+\cb2 <html>\cb1 \
+\cb2 <head>\cb1 \
+\cb2 <meta charset="utf-8">\cb1 \
+\cb2 <meta name="viewport" content="width=device-width">\cb1 \
+\cb2 <title>JS Bin</title>\cb1 \
+\cb2 <script>\cb1 \
+\cb2 function mouseDown() \{\cb1 \
+\cb2 document.getElementById("myP").style.color = "red";\cb1 \
+\cb2 \}\cb1 \
+\cb2 function mouseUp() \{\cb1 \
+\cb2 document.getElementById("myP").style.color = "green";\cb1 \
+\cb2 \}\cb1 \
+\cb2 </script>\cb1 \
+\cb2 </head>\cb1 \
+\cb2 <body>\cb1 \
+\cb2 <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">\cb1 \
+\cb2 Click the text! <br>\cb1 \
+\cb2 The mouseDown() function is triggered when the mouse\cb1 \
+\cb2 button is pressed down\cb1 \
+\cb2 over this paragraph, and sets the color of the text\cb1 \
+\cb2 to red. The mouseUp() function\cb1 \
+\cb2 is triggered when the mouse button is released, and\cb1 \
+\cb2 sets the color of the text to\cb1 \
+\cb2 green.\cb1 \
+\cb2 </p>\cb1 \
+\cb2 </body>\cb1 \
+\cb2 </html>\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 ---------------------------------------------------------------------------\cb1 \
+\cb2 3.\cb1 \
+\cb2 Understanding Scope:-\cb1 \
+\cb2 Create an Object Cat by literal notation.\cb1 \
+\cb2 Properties of Cat :  name:\'94\cb1 \
+\cb2 Mini\cb1 \
+\cb2 \'94,colour:\'94\cb1 \
+\cb2 white\cb1 \
+\cb2 \'94,age:\cb1 \
+\cb2 4\cb1 \
+\cb2 printInfo: Outer function that will write\cb1 \
+\cb2 cat\'92s name, colour and age\cb1 \
+\cb2 to console.\cb1 \
+\cb2 nestedFunction: Nested in printInfo,\cb1 \
+\cb2 it will also print cat\'92s name,\cb1 \
+\cb2 colour and age on the console.\cb1 \
+\cb2 Call nestedFunction() via printInfo()\cb1 \
+\cb2 After creating the above cat object, invoke printInfo()\cb1 \
+\cb2 on cat object.\cb1 \
+\cb2 Note\cb1 \
+\cb2 : Make appropriate use of \'93this\'94 keyword so that\cb1 \
+\cb2 both functions will\cb1 \
+\cb2 print the correct name, colour and age of cat to console.\cb1 \
+\cb2 Solution\cb1 \
+\cb2 <!DOCTYPE html>\cb1 \
+\cb2 <html lang="en">\cb1 \
+\cb2 <head>\cb1 \
+\cb2 <meta charset="UTF-8">\cb1 \
+\cb2 <meta name="viewport" content="width=device-width,\cb1 \
+\cb2 initial-scale=1.0">\cb1 \
+\cb2 <title>Document</title>\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 </head>\cb1 \
+\cb2 <body>\cb1 \
+\cb2 <script>\cb1 \
+\cb2 var cat=\{\cb1 \
+\cb2 name:"Mini",\cb1 \
+\cb2 colour:"white",\cb1 \
+\cb2 age:4,\cb1 \
+\cb2 printInfo: function()\{\cb1 \
+\cb2 var that=this;\cb1 \
+\cb2 return function()\{\cb1 \
+\cb2 return "name"+"  "+that.name+"  "+"colour"+"\cb1 \
+\cb2 "+that.colour+"\cb1 \
+\cb2 "+"age"+"  "+that.age;\cb1 \
+\cb2 \};\cb1 \
+\cb2 \}\cb1 \
+\cb2 \};\cb1 \
+\cb2 document.write(cat.printInfo()());\cb1 \
+\cb2 </script>\cb1 \
+\cb2 </body>\cb1 \
+\cb2 </html>\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \cb2 \
+\
+==========\
+Question 1\cb1 \
+\cb2 Create a constructor function Car to have colour, model and price as properties. Create two different Car objects with properties as :\cb1 \
+\cb2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0car1 : blue ,Honda city,1500000\cb1 \
+\cb2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0car2 : red,I20 ,900000\cb1 \
+\cb2 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cb1 \
+\cb2 Write a function to display car details like colour, price and model.\cb1 \
+\cb2 __________________________________________________________________________________\cb1 \
+\cb2 Question 2\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls1\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Create a form that will have following fields:\'a0\cb1 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720\partightenfactor0
+\ls2\ilvl0\cf0 \cb2 \kerning1\expnd0\expndtw0 {\listtext	1	}\expnd0\expndtw0\kerning0
+Name -\'a0 Should not be blank\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	2	}\expnd0\expndtw0\kerning0
+Address \'96 Should not be blank and minimum length should be 10 chars\'a0\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	3	}\expnd0\expndtw0\kerning0
+Phone number- Length should be 10 and only digits are allowed.\cb1 \
+\ls2\ilvl0\cb2 \kerning1\expnd0\expndtw0 {\listtext	4	}\expnd0\expndtw0\kerning0
+Email id\'a0 - Should not be blank and validate email patterns as well.\cb1 \
+\pard\pardeftab720\sa240\partightenfactor0
+\cf0 \cb2 Add a button to submit the above fields.\'a0\cb1 \
+\cb2 Write a function to validate above fields and alert appropriate messages if any of the fields is invalid.\
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 1.\cb1 \
+\cb2 Create a constructor function Car to have colour,\cb1 \
+\cb2 model and price as\cb1 \
+\cb2 properties. Create two different Car objects with\cb1 \
+\cb2 properties as :\cb1 \
+\cb2 car1 : blue ,Honda city,1500000\cb1 \
+\cb2 car2 : red,I20 ,900000\cb1 \
+\cb2 Write a function to display car details like colour,\cb1 \
+\cb2 price and model.\cb1 \
+\cb2 S\cb1 \
+\cb2 o\cb1 \
+\cb2 l\cb1 \
+\cb2 u\cb1 \
+\cb2 t\cb1 \
+\cb2 i\cb1 \
+\cb2 o\cb1 \
+\cb2 n\cb1 \
+\cb2 <html>\cb1 \
+\cb2 <head>\cb1 \
+\cb2 </head>\cb1 \
+\cb2 <body>\cb1 \
+\cb2 <p id="demo"></p>\cb1 \
+\cb2 <script>\cb1 \
+\cb2 function Car(colour,model,price)\cb1 \
+\cb2 \{\cb1 \
+\cb2 this.colour=colour;\cb1 \
+\cb2 this.model=model;\cb1 \
+\cb2 this.price=price;\cb1 \
+\cb2 this.details=function()\{\cb1 \
+\cb2 return this.colour+" "+this.model+"\cb1 \
+\cb2 "\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 +this.price;\cb1 \
+\cb2 \};\cb1 \
+\cb2 \}\cb1 \
+\cb2 var car1=new Car("blue","Honda city",1500000);\cb1 \
+\cb2 var car2=new Car("red","I20",900000);\cb1 \
+\cb2 document.write(car1.details()+"<br>");\cb1 \
+\cb2 document.write(car2.details());\cb1 \
+\cb2 </script>\cb1 \
+\cb2 </body>\cb1 \
+\cb2 </html>\cb1 \
+\cb2 ---------------------------------------------------------------------------------------\cb1 \
+\cb2 2.\cb1 \
+\cb2 Create a form that will have following fields:\cb1 \
+\cb2 1.\cb1 \
+\cb2 Name -  Should not be blank\cb1 \
+\cb2 2.\cb1 \
+\cb2 Address \'96 Should not be blank and minimum length should\cb1 \
+\cb2 be\cb1 \
+\cb2 10 chars\cb1 \
+\cb2 3.\cb1 \
+\cb2 Phone number- Length should be 10 and only digits\cb1 \
+\cb2 are allowed.\cb1 \
+\cb2 4.\cb1 \
+\cb2 Email id  - Should not be blank and validate email\cb1 \
+\cb2 patterns as\cb1 \
+\cb2 well.\cb1 \
+\cb2 Add a button to submit the above fields.\cb1 \
+\cb2 Write a function to validate above fields and alert\cb1 \
+\cb2 appropriate\cb1 \
+\cb2 messages if any of the fields is invalid.\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+Solution:\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 <!DOCTYPE html>\cb1 \
+\cb2 <html>\cb1 \
+\cb2 <head>\cb1 \
+\cb2 <title>Form </title>\cb1 \
+\cb2 <script>\cb1 \
+\cb2 function isEmpty()\{\cb1 \
+\cb2 if(document.forms.Name.value=="")\{\cb1 \
+\cb2 alert("empty");\cb1 \
+\cb2 \}\cb1 \
+\cb2 return false;\cb1 \
+\cb2 \}\cb1 \
+\cb2 </script>\cb1 \
+\cb2 </head>\cb1 \
+\cb2 <body>\cb1 \
+\cb2 <form  action="" onsubmit="return isEmpty()">\cb1 \
+\cb2 <div>\cb1 \
+\cb2 Name:\cb1 \
+\cb2 <input type="text" name="Name" required>\cb1 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+\cf0 \cb2 </div><br>\cb1 \
+\cb2 <div>\cb1 \
+\cb2 Address:\cb1 \
+\cb2 <input type="text" min=10  required>\cb1 \
+\cb2 </div><br>\cb1 \
+\cb2 <div>\cb1 \
+\cb2 Phone number:\cb1 \
+\cb2 <input type="tel" id="phone" pattern="[0-9]\{10\}"\cb1 \
+\cb2 required>\cb1 \
+\cb2 </div><br>\cb1 \
+\cb2 <div>\cb1 \
+\cb2 Email id:\cb1 \
+\cb2 <input type="email" required>\cb1 \
+\cb2 </div><br>\cb1 \
+\cb2 <input type="submit">\cb1 \
+\cb2 </form>\cb1 \
+\cb2 </body>\cb1 \
+\cb2 </html>\cb1 \
+\cf4 \
+}

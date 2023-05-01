@@ -1,0 +1,7 @@
+#1. Count the number of missing values (NaN) in each column
+#2. count all zeros in every column, Replace all the 0 values with NaN in a df and count them again
+#3. Create a copy of original dataframe and remove all the rows where missing values are there and count number of rows before and after droping it
+#4. in the original data frame Impute/put the mean value in place of missing values of that column and cross check if all missing values have been imputed or not
+#5 create a heat map showing correlation between variables
+#6 find the variance in each column
+#7 find the missing value ratio for every column (missing value ratio means missing value divided by total number of values in a column)

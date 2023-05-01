@@ -1,0 +1,120 @@
+<html>
+<body>
+    <h3>Car Price Prediction </h3>
+
+
+<div>
+  <form action="{{ url_for('predict')}}" method="post">
+    <label for="Maker">Maker</label>
+    <select id="Maker" name="Maker">
+      <option value="0">audi</option>
+      <option value="1">bmw</option>
+      <option value="2">fiat</option>
+      <option value="3">toyota</option>
+      <option value="4">hyundai</option>
+      <option value="5">nissan</option>
+      <option value="6">skoda</option>
+      <option value="7">maserati</option>
+    </select>
+    <br>
+    <label for="model">model</label>
+    <select id="model" name="model">
+      <option value="0">auris</option>
+      <option value="1">avensis</option>
+      <option value="2">aygo</option>
+      <option value="3">citigo</option>
+      <option value="4">coupe</option>
+      <option value="5">i30</option>
+      <option value="6">juke</option>
+      <option value="7">micra</option>
+      <option value="8">octavia</option>
+      <option value="9">panda</option>
+      <option value="10">q3</option>
+      <option value="11">q5</option>
+      <option value="12">q7</option>
+      <option value="13">qashqai</option>
+      <option value="14">rapid</option>
+      <option value="15">roomster</option>
+      <option value="16">superb</option>
+      <option value="17">tt</option>
+      <option value="18">x1</option>
+      <option value="19">x3</option>
+      <option value="20">x5</option>
+      <option value="21">yaris</option>
+      <option value="22">yeti</option>
+    </select>
+    <br>
+    <label for="Location">Location</label>
+    <select id="Location" name="Location">
+      <option value="0">Ahmedabad</option>
+      <option value="1">Bangalore</option>
+      <option value="2">Chennai</option>
+      <option value="3">Coimbatore</option>
+      <option value="4">Delhi</option>
+      <option value="5">Hyderabad</option>
+      <option value="6">Jaipur</option>
+      <option value="7">Kochi</option>
+      <option value="8">Kolkata</option>
+      <option value="9">Mumbai</option>
+      <option value="10">Pune</option>
+    </select>
+    <br>
+    <label for="Distance">Distance</label>
+    <input type="number" id="Distance" name="Distance">
+    <br>
+    </select>
+    <br>
+    <label for="Owner Type">Owner Type</label>
+    <select id="Owner Type" name="Owner Type">
+      <option value="0">First</option>
+      <option value="1">Fourth & above</option>
+      <option value="2">Second</option>
+      <option value="3">Third</option>
+    </select>
+    <br>
+    <label for="Age of the car">Age of the car</label>
+    <input type="number" id="Age of the car" name="Age of the car">
+    <br>
+    <label for="engine_displacement">engine_displacement</label>
+    <input type="number" id="engine_displacement" name="engine_displacement">
+    <br>
+    <label for="engine_power">engine_power</label>
+    <input type="number" id="engine_power" name="engine_power">
+    <br>
+    <label for="Vroom Audit Rating">Vroom Audit Rating</label>
+    <input type="number" id="Vroom Audit Rating" name="Vroom Audit Rating">
+    <br>
+    </select>
+    <br>
+    <label for="transmission">transmission</label>
+    <select id="transmission" name="transmission">
+      <option value="0">auto</option>
+      <option value="1">man</option>
+    </select>
+    <br>
+    <label for="door_count">door_count</label>
+    <input type="door_count" id="door_count" name="door_count">
+    </select>
+    <br>
+    <label for="seat_count">seat_count</label>
+    <input type="seat_count" id="seat_count" name="seat_count">
+    <br>
+    </select>
+    <br>
+    <label for="fuel_type">fuel_type</label>
+    <select id="fuel_type" name="fuel_type">
+      <option value="0">diesel</option>
+      <option value="1">petrol</option>
+
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+    <br>
+
+
+   </form>
+
+
+
+        <br><br><h3>{{prediction_text}}<h3>
+    </div>

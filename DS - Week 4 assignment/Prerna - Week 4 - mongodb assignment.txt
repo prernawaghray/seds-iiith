@@ -1,0 +1,295 @@
+Last login: Thu Jun 30 23:16:51 on ttys009
+pwaghray@pwaghray-ltm2 ~ % mongosh
+Current Mongosh Log ID:	62bde4a142f8d541f01fa829
+Connecting to:		mongodb://127.0.0.1:27017/?directConnection=true&serverSelectionTimeoutMS=2000&appName=mongosh+1.5.0
+Using MongoDB:		5.0.7
+Using Mongosh:		1.5.0
+
+For mongosh info see: https://docs.mongodb.com/mongodb-shell/
+
+------
+   The server generated these startup warnings when booting
+   2022-06-20T12:14:51.516+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+------
+
+------
+   Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+   metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+   
+   The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+   and anyone you share the URL with. MongoDB may use this information to make product
+   improvements and to suggest MongoDB products and deployment options to you.
+   
+   To enable free monitoring, run the following command: db.enableFreeMonitoring()
+   To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+------
+
+test> use ProductOrder
+switched to db ProductOrder
+ProductOrder> db.Order.find().limit(5)
+[
+  {
+    _id: ObjectId("62bde436e92b134286e98ffe"),
+    created: '2021-12-06 23:12:09',
+    last_updated: '2021-12-07 20:30:01',
+    items: [ { product_sku: 'SNY-11001', unit_price: 100000, quantity: 1 } ],
+    total_price: 100000,
+    discount: 10000,
+    net_price: 90000,
+    status: 1,
+    user_email: 'sudha.nat@yourmail.com'
+  },
+  {
+    _id: ObjectId("62bde436e92b134286e98fff"),
+    created: '2021-12-07 12:18:01',
+    last_updated: '2021-12-07 23:59:59',
+    items: [
+      { product_sku: 'SMG-21001', unit_price: 66000, quantity: 1 },
+      { product_sku: 'LLG-32001', unit_price: 64000, quantity: 1 },
+      { product_sku: 'PNS-18001', unit_price: 62000, quantity: 1 }
+    ],
+    total_price: 192000,
+    discount: 19200,
+    net_price: 172800,
+    status: 3,
+    user_email: 'currank@zestmail.com'
+  },
+  {
+    _id: ObjectId("62bde436e92b134286e99000"),
+    created: '2021-12-08 08:36:45',
+    last_updated: '2021-12-08 09:00:55',
+    items: [
+      { product_sku: 'SNY-12002', unit_price: 120000, quantity: 1 },
+      { product_sku: 'LLG-32001', unit_price: 64000, quantity: 1 }
+    ],
+    total_price: 184000,
+    discount: 18400,
+    net_price: 165600,
+    status: 2,
+    user_email: 'nabil.jamal@thatmail.com'
+  },
+  {
+    _id: ObjectId("62bde436e92b134286e99001"),
+    created: '2021-12-08 02:18:46',
+    last_updated: '2021-12-08 02:20:24',
+    items: [ { product_sku: 'SNY-12002', unit_price: 120000, quantity: 1 } ],
+    total_price: 120000,
+    discount: 12000,
+    net_price: 108000,
+    status: 2,
+    user_email: 'anjali.gupta@zestmail.com'
+  },
+  {
+    _id: ObjectId("62bde436e92b134286e99002"),
+    created: '2021-12-07 22:56:23',
+    last_updated: '2021-12-07 23:00:00',
+    items: [ { product_sku: 'SMG-21001', unit_price: 66000, quantity: 1 } ],
+    total_price: 66000,
+    discount: 6600,
+    net_price: 59400,
+    status: 2,
+    user_email: 'sudha.nat@yourmail.com'
+  }
+]
+ProductOrder> db.User.find().limit(5)
+[
+  {
+    _id: ObjectId("62bde45ae92b134286e99016"),
+    name: 'Anjali Gupta',
+    email: 'anjali.gupta@zestmail.com',
+    created: '2020-12-08 13:01:56',
+    last_accessed: '2021-12-04 13:23:00',
+    role: 'Customer'
+  },
+  {
+    _id: ObjectId("62bde45ae92b134286e99017"),
+    name: 'Kevin Curran',
+    email: 'currank@zestmail.com',
+    created: '2021-08-15 09:10:11',
+    last_accessed: '2021-11-30 09:00:23',
+    role: 'Supplier'
+  },
+  {
+    _id: ObjectId("62bde45ae92b134286e99018"),
+    name: 'Sudha Natarajan',
+    email: 'sudha.nat@yourmail.com',
+    created: '2021-06-14 12:12:24',
+    last_accessed: '2021-12-05 08:34:56',
+    role: 'Customer'
+  },
+  {
+    _id: ObjectId("62bde45ae92b134286e99019"),
+    name: 'Nabil Jamal',
+    email: 'nabil.jamal@thatmail.com',
+    created: '2020-11-16 08:30:45',
+    last_accessed: '2021-11-29 10:13:09',
+    role: 'Customer'
+  },
+  {
+    _id: ObjectId("62bde45ae92b134286e9901a"),
+    name: 'Clara Kingston',
+    email: 'clara.king@evermail.com',
+    created: '2021-08-09 23:12:00',
+    last_accessed: '2021-12-02 11:45:02',
+    role: 'Customer'
+  }
+]
+ProductOrder> db.Inventory.find().limit(5)
+[
+  {
+    _id: ObjectId("62bde41ce92b134286e98ff2"),
+    sku: 'SNY-11001',
+    quantity: 100,
+    last_updated: '2021-11-18 18:19:27'
+  },
+  {
+    _id: ObjectId("62bde41ce92b134286e98ff3"),
+    sku: 'SNY-12002',
+    quantity: 80,
+    last_updated: '2021-12-01 23:12:45'
+  },
+  {
+    _id: ObjectId("62bde41ce92b134286e98ff4"),
+    sku: 'SMG-21001',
+    quantity: 400,
+    last_updated: '2021-10-31 19:30:18'
+  },
+  {
+    _id: ObjectId("62bde41ce92b134286e98ff5"),
+    sku: 'LLG-32001',
+    quantity: 450,
+    last_updated: '2021-11-28 12:34:56'
+  },
+  {
+    _id: ObjectId("62bde41ce92b134286e98ff6"),
+    sku: 'PNS-18001',
+    quantity: 500,
+    last_updated: '2021-12-01 11:34:21'
+  }
+]
+ProductOrder> db.Product.find().limit(5)
+[
+  {
+    _id: ObjectId("62bde44ce92b134286e9900a"),
+    sku: 'SNY-11001',
+    code: 'Sony-01',
+    price: 100000,
+    created: '2021-08-09 12:32:56',
+    last_updated: '2021-08-09 12:32:56',
+    brand: 'Sony',
+    model: 'Bravia-X',
+    warranty: 5
+  },
+  {
+    _id: ObjectId("62bde44ce92b134286e9900b"),
+    sku: 'SNY-12002',
+    code: 'Sony-02',
+    price: 120000,
+    created: '2021-09-19 08:23:45',
+    last_updated: '2021-09-19 08:23:45',
+    brand: 'Sony',
+    model: 'Bravia-Z',
+    warranty: 5
+  },
+  {
+    _id: ObjectId("62bde44ce92b134286e9900c"),
+    sku: 'SMG-21001',
+    code: 'Samsung-01',
+    price: 66000,
+    created: '2021-07-13 16:46:32',
+    last_updated: '2021-07-13 16:46:32',
+    brand: 'Samsung',
+    model: 'XZ',
+    warranty: 3
+  },
+  {
+    _id: ObjectId("62bde44ce92b134286e9900d"),
+    sku: 'LLG-32001',
+    code: 'LG-01',
+    price: 64000,
+    created: '2021-10-28 18:34:21',
+    last_updated: '2021-10-28 18:34:21',
+    brand: 'LG',
+    model: 'ZX',
+    warranty: 3
+  },
+  {
+    _id: ObjectId("62bde44ce92b134286e9900e"),
+    sku: 'PNS-18001',
+    code: 'Panasonic-01',
+    price: 62000,
+    created: '2021-11-01 19:21:00',
+    last_updated: '2021-11-01 19:21:00',
+    brand: 'Panasonic',
+    model: 'LY',
+    warranty: 3
+  }
+]
+ProductOrder> db.Product.distinct('brand')
+[
+  'AppleTV',
+  'GoogleTV',
+  'Haier',
+  'LG',
+  'Panasonic',
+  'Samsung',
+  'Sony'
+]
+ProductOrder> db.Product.distinct('model')
+[
+  'A',        'AP1',
+  'Bravia-X', 'Bravia-Z',
+  'G',        'GO1',
+  'LY',       'N',
+  'XZ',       'ZX'
+]
+ProductOrder> db.Product.find({}, {price:1, _id:0}).sort({'price': -1}).limit(1)
+[ { price: 150000 } ]
+ProductOrder> db.Product.find({}, {price:1, _id:0}).sort({'price': 1}).limit(1)
+[ { price: 62000 } ]
+ProductOrder> db.Inventory.find({'sku': 'SNY-11001'}, {'_id': 0, 'quantity': 1, 'last_updated': 1})
+[ { quantity: 100, last_updated: '2021-11-18 18:19:27' } ]
+ProductOrder> db.User.countDocuments({'role': 'Supplier'})
+3
+ProductOrder> db.Product.find({'model': 'Bravia-X'},{_id: 0, model: 0, created: 0, last_updated: 0})
+[
+  {
+    sku: 'SNY-11001',
+    code: 'Sony-01',
+    price: 100000,
+    brand: 'Sony',
+    warranty: 5
+  }
+]
+ProductOrder> db.Product.find({brand: 'Sony', price: {$gt: 100000}})
+[
+  {
+    _id: ObjectId("62bde44ce92b134286e9900b"),
+    sku: 'SNY-12002',
+    code: 'Sony-02',
+    price: 120000,
+    created: '2021-09-19 08:23:45',
+    last_updated: '2021-09-19 08:23:45',
+    brand: 'Sony',
+    model: 'Bravia-Z',
+    warranty: 5
+  }
+]
+ProductOrder> db.Product.aggregate([{$group: {_id:"$brand", count: { $sum: 1}}},{$sort:{'count':-1}}])
+[
+  { _id: 'Samsung', count: 2 },
+  { _id: 'LG', count: 2 },
+  { _id: 'Sony', count: 2 },
+  { _id: 'Panasonic', count: 1 },
+  { _id: 'AppleTV', count: 1 },
+  { _id: 'Haier', count: 1 },
+  { _id: 'GoogleTV', count: 1 }
+]
+ProductOrder> db.User.aggregate([{$group: {_id:"$role", count: { $sum: 1}}},{$sort:{'count':-1}}]).forEach(function(myDocument) { db.temp.insert(myDocument); } )
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+
+ProductOrder> db.getCollectionNames()
+[ 'Product', 'Order', 'Inventory', 'User', 'temp' ]
+ProductOrder> db.temp.find()
+[ { _id: 'Customer', count: 9 }, { _id: 'Supplier', count: 3 } ]
+ProductOrder> 

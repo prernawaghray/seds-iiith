@@ -1,0 +1,99 @@
+<! DOCTYPE html>  
+<html>  
+    <head>  
+    <meta charset="utf-8">  
+    <title> SIMPLE CALCULATOR </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="calculatorScript.js"></script>
+  </head>
+
+<body id ="bgimg" >
+  
+    <table class ="center">
+      <tr> 
+        <div class="aligncenter">
+        <input type="text" class="display2" id="display2" name="display2"></tr>
+        </div>
+      <tr>
+      <tr> 
+        <div class="aligncenter">
+        <input type="text" class="display1" id="result" name="display1"  ></tr>
+        </div>   
+      <tr>
+        <td>
+         <input type= "button" value = "C" onclick="cls()" class="operatorbutton">
+        </td>
+        <td>
+          <input type= "button" value = 'CE' onclick="clearlastelement()" class="operatorbutton">
+        </td>
+        <td>
+          <input type= "button" value = '%' onclick="display_ops('%')" class="operatorbutton">
+        </td>
+        <td>
+          <input type= "button" value = '/' onclick="display_ops('/')" class="operatorbutton">
+        </td>
+      </tr>
+  
+      <tr>
+        <td>
+         <input type= "button" value = '7' onclick="display('7')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '8' onclick="display('8')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '9' onclick="display('9')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '*' onclick="display_ops('*')" class="operatorbutton">
+        </td>
+      </tr>
+      <tr>
+        <td>
+         <input type= "button" value = '4' onclick="display('4')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '5' onclick="display('5')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '6' onclick="display('6')" class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '-' onclick="display_ops('-')" class="operatorbutton">
+        </td>
+      </tr>
+      <tr>
+        <td>
+         <input type= "button" value = '1' onclick="display('1')" class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '2' onclick="display('2')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '3' onclick="display('3')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '+' onclick="display_ops('+')"  class="operatorbutton">
+        </td>
+      </tr>
+      <tr>
+        <td>
+         <input type= "button" value = '' onclick="" class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '0' onclick="display('0')"  class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = '' onclick="" class="numberbutton">
+        </td>
+        <td>
+          <input type= "button" value = "="" onclick="calculate()" class="operatorbutton">
+        </td>
+      </tr>
+  </table>
+ 
+
+</body>
+
+</html>
+

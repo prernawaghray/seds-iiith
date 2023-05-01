@@ -1,0 +1,47 @@
+<html>
+<head>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="calculatorScript.js"></script>
+<body>
+<table class="disp_table">
+    <tr>
+        <td>
+            <input id="display_ip" type="text"/>
+        </td>
+    </tr>
+</table>
+<table class="buttons_table">
+    <tr>
+        <td><input onclick="clearDisp()" type="button" class="control" value="C"/></td>
+        <td><input onclick="delvalue()" type="button" class="control" value="CE"/></td>
+        <td><input type="button" class="control" value="%"/></td>
+        <td><input type="button" class="control"value="//" /></td>
+    </tr>
+    <tr>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="7"/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="8"/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="9"/></td>
+        <td><input type="button" onclick="add()" class="control"value="+"/></td>
+    </tr>
+    <tr>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="4"/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="5"/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="6"/></td>
+        <td><input type="button" onclick="add()" class="control"value="-"/></td>
+    </tr>
+    <tr>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="1"/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="2"/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="3"/></td>
+        <td><input type="button" onclick="add()" class="control"value="*"/></td>
+    </tr>
+    <tr>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value=""/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value="0"/></td>
+        <td><input onclick="appendDisp(this.value)" type="button" class="control" value=""/></td>
+        <td><input type="button" onclick="add()" class="control"value="="/></td>
+    </tr>
+</table>
+</body>
+</html>

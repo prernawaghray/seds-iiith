@@ -1,0 +1,49 @@
+Printing all nodes in task list :
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc21', 'start_time': 10046, 'end_time': 115332}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc20', 'start_time': 5842, 'end_time': 111910}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc19', 'start_time': 5638, 'end_time': 104448}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc18', 'start_time': 5434, 'end_time': 101026}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc17', 'start_time': 5230, 'end_time': 93604}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc16', 'start_time': 5026, 'end_time': 90142}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc15', 'start_time': 4822, 'end_time': 82720}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc14', 'start_time': 4618, 'end_time': 75258}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc13', 'start_time': 4414, 'end_time': 71836}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc12', 'start_time': 4210, 'end_time': 64414}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc11', 'start_time': 4006, 'end_time': 60952}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc10', 'start_time': 3802, 'end_time': 53530}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc9', 'start_time': 3558, 'end_time': 50108}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc8', 'start_time': 3354, 'end_time': 42646}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc7', 'start_time': 3150, 'end_time': 35224}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc6', 'start_time': 2946, 'end_time': 31802}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc5', 'start_time': 2742, 'end_time': 24340}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc4', 'start_time': 2538, 'end_time': 20918}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc3', 'start_time': 2334, 'end_time': 13456}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc2', 'start_time': 2130, 'end_time': 10034}
+
+Printing all nodes in task list in reverse order :
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc2', 'start_time': 2130, 'end_time': 10034}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc3', 'start_time': 2334, 'end_time': 13456}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc4', 'start_time': 2538, 'end_time': 20918}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc5', 'start_time': 2742, 'end_time': 24340}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc6', 'start_time': 2946, 'end_time': 31802}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc7', 'start_time': 3150, 'end_time': 35224}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc8', 'start_time': 3354, 'end_time': 42646}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc9', 'start_time': 3558, 'end_time': 50108}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc10', 'start_time': 3802, 'end_time': 53530}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc11', 'start_time': 4006, 'end_time': 60952}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc12', 'start_time': 4210, 'end_time': 64414}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc13', 'start_time': 4414, 'end_time': 71836}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc14', 'start_time': 4618, 'end_time': 75258}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc15', 'start_time': 4822, 'end_time': 82720}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc16', 'start_time': 5026, 'end_time': 90142}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc17', 'start_time': 5230, 'end_time': 93604}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc18', 'start_time': 5434, 'end_time': 101026}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc19', 'start_time': 5638, 'end_time': 104448}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc20', 'start_time': 5842, 'end_time': 111910}
+{'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc21', 'start_time': 10046, 'end_time': 115332}
+
+The task details with minimum task time as 7904 is {'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc2', 'start_time': 2130, 'end_time': 10034}
+
+The task details with maximum task time as 106068 is {'task_id': '8769001d-8c4c-4628-ae62-5dc09369fcc20', 'start_time': 5842, 'end_time': 111910}
+
+The sum of time of all tasks is : 1167860 and the total number of task is : 20. So the average is task times is : 58393.0

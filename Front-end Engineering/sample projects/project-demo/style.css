@@ -1,0 +1,16 @@
+body{
+    background-image: url('bgImg.JPG');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.buttons_table{
+background-color: red;
+position: relative;
+
+}
+
+.disp_table{
+    background-color: orange;
+}

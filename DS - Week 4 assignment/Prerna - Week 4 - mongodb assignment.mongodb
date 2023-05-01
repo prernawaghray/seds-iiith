@@ -1,0 +1,38 @@
+//Creating database
+use('ProductOrder'); 
+// Creating Collections
+db.createCollection('Order');
+db.createCollection('Product');
+db.createCollection('Inventory');
+db.createCollection('User');
+// Switching over to mongogodb Compass to add documents
+// Displaying first 5 rows of Order collection
+db.Product.find().limit(5).pretty();
+// Displaying first 5 rows of Order collection
+db.Order.find().limit(5).pretty();
+// Displaying first 5 rows of Order collection
+db.Inventory.find().limit(5).pretty();
+// Displaying first 5 rows of Order collection
+db.User.find().limit(5).pretty();
+//Displaying the Unique Brand and Model names from the Product collection
+db.Product.distinct('brand');
+db.Product.distinct('model');
+//The maximum and minimum price of the given products
+db.Product.find({}, {price:1, _id:0}).sort({'price': -1}).limit(1);
+db.Product.find({}, {price:1, _id:0}).sort({'price': 1}).limit(1);
+//The quantity and last_updated date and time for sku "SNY-11001"
+db.Inventory.find({'sku': 'SNY-11001'}, {'_id': 0, 'quantity': 1, 'last_updated': 1});
+//The total number of users whose role is identified as 'Supplier' from User collection
+db.User.countDocuments({'role': 'Supplier'});
+// 'sku', 'code', 'price', 'brand' and 'warranty' information for the model 'Bravia-X'
+db.Product.find({'model': 'Bravia-X'},{_id: 0, model: 0, created: 0, last_updated: 0});
+// The information of Sony products which have an Price greater than 1 lakh
+db.Product.find({brand: 'Sony', price: {$gt: 100000}});
+//Showing total number of products by each Brand and sorting them in descending order
+db.Product.aggregate([{$group: {_id:"$brand", count: { $sum: 1}}},{$sort:{'count':-1}}]);
+///The total no of users by each role, sorting them is descending order and saving results in the temporary collection
+db.User.aggregate(
+  [{$group: {_id:"$role", count: { $sum: 1}}},{$sort:{'count':-1}}]).forEach(
+    function(myDocument) { db.temp.insert(myDocument); } );
+db.getCollectionNames();
+db.temp.find();
